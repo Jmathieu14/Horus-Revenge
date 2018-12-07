@@ -1,0 +1,25 @@
+This will be the outline of the story
+
+Horus - son of Osiris, he ventures to someplace near Luxor, where his father is buried
+ 1. Confirms the death of his father
+ 2. Begins quest of revenge
+ 3. Visits Luxor, sees Aunt (gains info)
+ 4. Goes into the Temple of Luxor (finds things/loot)
+ 5. Next, crosses river to Naqada and Valley of the Kings
+ 6. Finds stuff there (loot, perhaps)
+ 7. Next up, Abydos and its temple (loot or info gained)
+ 8. Goes to Thinis, finds/buys boat.
+ 9. [Depending on status, boat breaks down earlier or later]
+    - Furthest is Herakleopolis, least is Badari
+ 10. *Assume made it to Beni Hasan
+    - Repairs boat in Beni Hasan
+ 11. Makes it to Herakleopolis, sees Bent Pyramid in distance and lake
+ 12. Needs to go around lake to continue North bound
+ 13. Player can decide to venture into Bent Pyramid
+    - Loot or trap perhaps
+ 14. Make it to Dahshur, gets final clue, goes to find Set in Giza
+ 15. Plot-twist: Set has mother hostage
+ 16. End, either defeats or loses to Set
+
+Ideas:
+ - Display map for players location?
