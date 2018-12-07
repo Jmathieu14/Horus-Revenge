@@ -1,2 +1,2 @@
-# Horus-Revenge
-Repo for Twine based game
+# Horus' Revenge
+This is the repository for the Twine based game `Horus' Revenge`.
