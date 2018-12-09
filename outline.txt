@@ -1,8 +1,8 @@
 This will be the outline of the story
 
 Horus - son of Osiris, he ventures to someplace near Luxor, where his father is buried
- 1. Confirms the death of his father
- 2. Begins quest of revenge
+ 1. Confirms the death of his father [*]
+ 2. Begins quest of revenge [*]
  3. Visits Luxor, sees Aunt (gains info)
  4. Goes into the Temple of Luxor (finds things/loot)
  5. Next, crosses river to Naqada and Valley of the Kings
