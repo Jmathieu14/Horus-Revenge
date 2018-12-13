@@ -5,9 +5,9 @@ Horus - son of Osiris, he ventures to someplace near Luxor, where his father is 
  2. Begins quest of revenge [*]
  3. Visits Luxor, sees Aunt (gains info)
  4. Goes into the Temple of Luxor (finds things/loot)
- 5. Next, crosses river to Naqada and Valley of the Kings
- 6. Finds stuff there (loot, perhaps)
- 7. Next up, Abydos and its temple (loot or info gained)
+ 5. Next, crosses river to Naqada
+ 6. Buys dagger here if dagger-less
+ 7. Next up, Abydos and its temple (TRAP)
  8. Goes to Thinis, finds/buys boat.
  9. [Depending on status, boat breaks down earlier or later]
     - Furthest is Herakleopolis, least is Badari
