@@ -27,6 +27,7 @@ tw-expression tw-link {
 
 
 
+
 </style>
         <script role="script" id="twine-user-script" type="text/twine-javascript">var my_story = document.getElementsByTagName("tw-story")[0];
 function replaceText() {
@@ -47,6 +48,7 @@ console.log(player);
 my_story.onChange = replaceText();
 my_story.onClick = replaceText();
 console.log("var my_story = document.getElementsByTagName(\"tw-story\")[0];");
+
 
 
 
@@ -347,7 +349,7 @@ console.log("var my_story = document.getElementsByTagName(\"tw-story\")[0];");
             [[[$room_name-&gt;Door Room C]]].</tw-passagedata>
         <tw-passagedata pid="74" name="Example Enter Dungeon" tags="Example" position="145,529" size="100,100">[[Enter the Dungeon-&gt;Modular Dungeon - Begin]]
             (set: $dungeon_name = &quot;The Dungeon of Fate&quot;)</tw-passagedata>
-        <tw-passagedata pid="75" name="Dead End" tags="" position="574,758" size="100,100">(either: &quot;I find myself in a room with no exit. I must return the way I came.&quot;, &quot;Dead end... Time to go back.&quot;, &quot;This room...
+        <tw-passagedata pid="75" name="Dead End" tags="" position="596,747" size="100,100">(either: &quot;I find myself in a room with no exit. I must return the way I came.&quot;, &quot;Dead end... Time to go back.&quot;, &quot;This room...
             there&#39;s nothing for me here. I must head back.&quot;)
             (if: $prev_room is &quot;Door Room A&quot;) [[[Leave-&gt;Door Room A]]](if: $prev_room is &quot;Door Room B&quot;) [[[Leave-&gt;Door Room B]]](if: $prev_room is &quot;Door Room C&quot;) [[[Leave-&gt;Door Room C]]]</tw-passagedata>
         <tw-passagedata pid="76" name="Door Room A" tags="" position="497,526" size="100,100">(set: $cur_room = $prev_room)(set: $prev_room = &quot;Door Room A&quot;)
