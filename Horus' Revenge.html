@@ -23,6 +23,7 @@ tw-expression tw-link {
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">var my_story = document.getElementsByTagName("tw-story")[0];
 function replaceText() {
 	// Refresh what my_story holds
@@ -42,6 +43,7 @@ console.log(player);
 my_story.onChange = replaceText();
 my_story.onClick = replaceText();
 console.log("var my_story = document.getElementsByTagName(\"tw-story\")[0];");
+
 
 
 
@@ -97,7 +99,7 @@ I wondered if I should [[bribe-&gt;Bribe]] this soldier or find [[another-&gt;Sm
 
 The path in front of me abruptly splits into two paths. [[One-&gt;Boat Repair]] seems to go towards some smaller shops while the [[other-&gt;Road to Herakleopolis]] seems to lead out of Beni Hasan, towards Herakleopolis.
 (if: $coins &gt; 2) [(set: $coins -= 2)]
-(else:) [(set: $coins = 0)]</tw-passagedata><tw-passagedata pid="32" name="Game Over" tags="" position="173,360" size="100,100">GAME OVER
+(else:) [(set: $coins = 0)]</tw-passagedata><tw-passagedata pid="32" name="Game Over" tags="" position="251,86" size="100,100">GAME OVER
 [[Start again?-&gt;Intro]]</tw-passagedata><tw-passagedata pid="33" name="Boat Repair" tags="" position="3192,526" size="100,100">Among the smaller shops, I stumble upon on a boat repairman! I ask him to repair my boat.
 (if: $rep &gt;= 5) [&quot;I know you! You are the great Horus!&quot;, he proclaims. He offers to fix my [[boat-&gt;Herakleopolis Shore]] for free. Not long after, I&#39;m on my way down the Nile River.]
 (elseif: $rep &gt; -2) [&quot;I can repair your boat, but it will cost you 3 coins. 
@@ -117,7 +119,27 @@ I give the man a coin. (set: $coins -= 1)
 (if: $beggarCoins &lt; 4) [
 (if: $coins is 0) [I&#39;ve given this man my last coin. I should be on my [[way-&gt;Path to Dashur?]].]
 (else:)[&quot;Oh, thank you! Can I have [[another-&gt;Give Coin]]?&quot; Perhaps I should just go on my [[way-&gt;Path to Dashur?]].]]
-(else:) [&quot;Thank you! Please have this spear. No use for it around here so nobody seems to want to buy it. Maybe you will have more luck finding a use for it.&quot; (set: $spear to 1) I take the spear from him. It is well-balanced and sharp. With that, I [[take-&gt;Path to Dashur?]] my leave.]</tw-passagedata><tw-passagedata pid="44" name="Refuse to Give Coin" tags="" position="4063,788" size="100,100">I ignore the man and keep walking. A few seconds after, I hear a sound and look back to find that he vanished. Without giving it a second thought, I [[continue-&gt;Path to Dashur?]] onwards.</tw-passagedata></tw-storydata>
+(else:) [&quot;Thank you! Please have this spear. No use for it around here so nobody seems to want to buy it. Maybe you will have more luck finding a use for it.&quot; (set: $spear to 1) I take the spear from him. It is well-balanced and sharp. With that, I [[take-&gt;Path to Dashur?]] my leave.]</tw-passagedata><tw-passagedata pid="44" name="Refuse to Give Coin" tags="" position="4063,788" size="100,100">I ignore the man and keep walking. A few seconds after, I hear a sound and look back to find that he vanished. Without giving it a second thought, I [[continue-&gt;Path to Dashur?]] onwards.</tw-passagedata><tw-passagedata pid="45" name="Visit Luxor Temple" tags="" position="2091,296" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="46" name="Modular Dungeon - Begin" tags="" position="300,531" size="100,100">(set: $prev_room = &quot;Entrance&quot;)(either: &quot;I make my way into &quot;, &quot;I enter &quot;, &quot;I find the entrance to &quot;) //$dungeon_name//. (either: &quot;I venture into the next &quot;, &quot;I find myself heading towards the following &quot;, &quot;I make my way to the next &quot;)(set: $room_name = (either: &quot;room&quot;, &quot;passageway&quot;, &quot;area&quot;, &quot;section of this building&quot;))(set: $random_var = (either: 0, 1, 2))(if: $random_var is 0) [[[$room_name-&gt;Door Room A]]](if: $random_var is 1) [[[$room_name-&gt;Door Room B]]](if: $random_var is 2) [[[$room_name-&gt;Door Room C]]].</tw-passagedata><tw-passagedata pid="47" name="Example Enter Dungeon" tags="Example" position="145,529" size="100,100">[[Enter the Dungeon-&gt;Modular Dungeon - Begin]]
+(set: $dungeon_name = &quot;The Dungeon of Fate&quot;)</tw-passagedata><tw-passagedata pid="48" name="Dead End" tags="" position="574,758" size="100,100">(either: &quot;I find myself in a room with no exit. I must return the way I came.&quot;, &quot;Dead end... Time to go back.&quot;, &quot;This room... there&#39;s nothing for me here. I must head back.&quot;)
+(if: $prev_room is &quot;Door Room A&quot;) [[[Leave-&gt;Door Room A]]](if: $prev_room is &quot;Door Room B&quot;) [[[Leave-&gt;Door Room B]]](if: $prev_room is &quot;Door Room C&quot;) [[[Leave-&gt;Door Room C]]]</tw-passagedata><tw-passagedata pid="49" name="Door Room A" tags="" position="497,526" size="100,100">(set: $cur_room = $prev_room)(set: $prev_room = &quot;Door Room A&quot;)
+(set: $destination_r = (either: &quot;Dead End&quot;, &quot;B&quot;, &quot;C&quot;))
+(set: $destination_l = (either: &quot;Dead End&quot;, &quot;B&quot;, &quot;C&quot;))
+I end up in a room with a door on the right and the left. I go through:
+(if: $destination_r is &quot;Dead End&quot;)[- [[The Right Door-&gt;Dead End]]]
+(if: $destination_l is &quot;Dead End&quot;)[- [[The Left Door-&gt;Dead End]]]
+(if: $cur_room is &quot;Door Room B&quot;)[- [[The way I came-&gt;Door Room B]]](if: $cur_room is &quot;Door Room C&quot;)[- [[The way I came-&gt;Door Room C]]](if: $cur_room is &quot;Entrance&quot;)[- [[The way I came-&gt;Modular Dungeon - Exit]]]</tw-passagedata><tw-passagedata pid="50" name="Door Room B" tags="" position="618,526" size="100,100">(set: $cur_room = $prev_room)(set: $prev_room = &quot;Door Room B&quot;)
+(set: $destination_r = (either: &quot;Dead End&quot;, &quot;Destination 2&quot;))
+(set: $destination_l = (either: &quot;Dead End&quot;, &quot;Destination 2&quot;))
+(set: $destination_c = (either: &quot;Dead End&quot;, &quot;Destination 2&quot;))
+I end up in a room with a door in the center, right and the left. I go through:
+- (if: $destination_c is &quot;Dead End&quot;) [[[The Center Door-&gt;Dead End]]]
+- (if: $destination_r is &quot;Dead End&quot;) [[[The Right Door-&gt;Dead End]]]
+- (if: $destination_l is &quot;Dead End&quot;) [[[The Left Door-&gt;Dead End]]]
+(if: $cur_room is &quot;Door Room A&quot;)[- [[The way I came-&gt;Door Room A]]](if: $cur_room is &quot;Door Room C&quot;)[- [[The way I came-&gt;Door Room C]]](if: $cur_room is &quot;Entrance&quot;)[- [[The way I came-&gt;Modular Dungeon - Exit]]]</tw-passagedata><tw-passagedata pid="51" name="Door Room C" tags="" position="743,526" size="100,100">(set: $cur_room = $prev_room)(set: $prev_room = &quot;Door Room C&quot;)
+(set: $destination = (either: &quot;Dead End&quot;, &quot;A&quot;, &quot;B&quot;))
+I end up in a room with a single door (either: &quot;in the center of the room&quot;, &quot;on the left&quot;, &quot;on the right&quot;). I go through:
+(if: $destination is &quot;Dead End&quot;)[- [[The Right Door-&gt;Dead End]]](if: $destination is &quot;A&quot;)[- [[The Right Door-&gt;Door Room A]]](if: $destination is &quot;B&quot;)[- [[The Right Door-&gt;Door Room B]]]
+(if: $cur_room is &quot;Door Room A&quot;)[- [[The way I came-&gt;Door Room A]]](if: $cur_room is &quot;Door Room B&quot;)[- [[The way I came-&gt;Door Room B]]](if: $cur_room is &quot;Entrance&quot;)[- [[The way I came-&gt;Modular Dungeon - Exit]]]</tw-passagedata><tw-passagedata pid="52" name="$destination_r" tags="" position="172,378" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="53" name="$destination_l" tags="" position="294,379" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="54" name="Modular Dungeon - Exit" tags="" position="290,690" size="100,100">I manage to leave the //$dungeon_name//. Now to continue my journey.</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
