@@ -26,10 +26,7 @@ tw-expression tw-link {
 
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> master
 </style>
         <script role="script" id="twine-user-script" type="text/twine-javascript">var my_story = document.getElementsByTagName("tw-story")[0];
 function replaceText() {
@@ -55,10 +52,7 @@ console.log("var my_story = document.getElementsByTagName(\"tw-story\")[0];");
 
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> master
 </script>
         <tw-passagedata pid="1" name="Intro" tags="Intro" position="124,217" size="200,100">The heat is oppressive. As the sun sets, I kneel at my father&#39;s grave. //It was true// I thought, //My father **was** killed.// A tale, no, a rumor my
             peers had about my family. A tale that I was told was false by my own mother! Until... until now... What was it those children [[said-&gt;Remember Attempt 1]] about me...?
@@ -92,19 +86,11 @@ console.log("var my_story = document.getElementsByTagName(\"tw-story\")[0];");
         <tw-passagedata pid="5" name="Rest first" tags="" position="488,313" size="100,100">I fall asleep not far from the tombstone. In my dreams, I see my father warning me of the //Chaos// to come. This will help me at a later point, I hope.
             Anyhow, I now [[awake-&gt;Awake from first rest]].</tw-passagedata>
         <tw-passagedata pid="6" name="Awake from first rest" tags="" position="631,313" size="100,100">I slept well, and embark on my journey. I am headed to the nearest [[city-&gt;Arrive at Nearest City]].
-<<<<<<< HEAD
             (set: $days_played to $days_played + 1)
             (set: $dagger to 1)</tw-passagedata>
         <tw-passagedata pid="7" name="Realize loss of dagger" tags="" position="627,151" size="100,100">I made it through the night, but with the morning light, I notice my dagger is missing. On the plus side, the outskirts of the nearest
             [[city-&gt;Arrive at Nearest City]] come into view.
             (set: $days_played to $days_played + 1)
-=======
-            (set: $days_played to $days_played + 1)
-            (set: $dagger to 1)</tw-passagedata>
-        <tw-passagedata pid="7" name="Realize loss of dagger" tags="" position="627,151" size="100,100">I made it through the night, but with the morning light, I notice my dagger is missing. On the plus side, the outskirts of the nearest
-            [[city-&gt;Arrive at Nearest City]] come into view.
-            (set: $days_played to $days_played + 1)
->>>>>>> master
             (set: $dagger to 0)</tw-passagedata>
         <tw-passagedata pid="8" name="Arrive at Nearest City" tags="" position="780,211" size="100,100">I venture into Luxor, and scour the streets. I see someone who catches my eye. I believe it to be my aunt. I decide to:
 
@@ -152,11 +138,8 @@ console.log("var my_story = document.getElementsByTagName(\"tw-story\")[0];");
         <tw-passagedata pid="23" name="Smite" tags="" position="2230,750" size="100,100">I raise both arms towards the guards. All of a sudden, a cast of falcons swoops down and they all start pecking at the guards. With the guards distracted, I
             [[walk-&gt;Boat Ferry]] through the gates unharmed. As I make my way to the docks, I see nearby civilians looking at me in fear. (set: $rep -= 5) (set: $power = &#39;used&#39;)</tw-passagedata>
         <tw-passagedata pid="24" name="Bribe" tags="" position="2365,612" size="100,100">(if: $coins &gt;= 5) [(set: $coins -= 5)I reluctantly hand over 5 coins to the guards and they let me go on my way. On the way to the [[docks-&gt;Boat Ferry]] I
-<<<<<<< HEAD
             see something shiny on the ground. A silver key; maybe it&#39;ll be useful later. (set: $silverKey = 1)]
-=======
             spot a large object on the ground. It appears to be a spear, a sharp one at that! I take it with me in the hopes that it will be useful later. (set: $spear = 1) (set: $spear_state to &quot;sharp&quot;)]
->>>>>>> master
             (else:) [I dig through my pocket to find I don&#39;t have 5 coins. I wish it didn&#39;t have to come to [[this-&gt;Smite]].]</tw-passagedata>
         <tw-passagedata pid="25" name="Steal" tags="" position="2688,651" size="100,100">There&#39;s a boat loosely tied down with no one near to guard it. I slip away towards the boat and before long, am [[cruising-&gt;Boat Breaks Down]] down the
             river. I hope that nobody saw my illicit actions. (set: $rep -= 2)</tw-passagedata>
@@ -185,11 +168,7 @@ console.log("var my_story = document.getElementsByTagName(\"tw-story\")[0];");
             The path in front of me abruptly splits into two paths. [[One-&gt;Boat Repair]] seems to go towards some smaller shops while the [[other-&gt;Road to Herakleopolis]] seems to lead out of Beni Hasan, towards Herakleopolis.
             (if: $coins &gt; 2) [(set: $coins -= 2)]
             (else:) [(set: $coins = 0)]</tw-passagedata>
-<<<<<<< HEAD
         <tw-passagedata pid="32" name="Game Over" tags="" position="251,86" size="100,100">GAME OVER
-=======
-        <tw-passagedata pid="32" name="Game Over" tags="" position="173,360" size="100,100">GAME OVER
->>>>>>> master
             [[Start again?-&gt;Intro]]</tw-passagedata>
         <tw-passagedata pid="33" name="Boat Repair" tags="" position="3192,526" size="100,100">Among the smaller shops, I stumble upon on a boat repairman! I ask him to repair my boat.
             (if: $rep &gt;= 5) [&quot;I know you! You are the great Horus!&quot;, he proclaims. He offers to fix my [[boat-&gt;Herakleopolis Shore]] for free. Not long after, I&#39;m on my way down the Nile River.]
@@ -216,59 +195,6 @@ console.log("var my_story = document.getElementsByTagName(\"tw-story\")[0];");
             (set: $coins += 2)</tw-passagedata>
         <tw-passagedata pid="39" name="Get Mugged" tags="" position="3502,657" size="100,100">I hand over all of my coins and the bandits let me on my [[way-&gt;Herakleopolis]]. Better to give them my coins then risk my life.</tw-passagedata>
         <tw-passagedata pid="40" name="Around the Lake" tags="" position="3935,681" size="100,100">(set: $beggarCoins to 0)
-<<<<<<< HEAD
-            The path around the lake is scenic and peaceful. In the corner of my eye, I see an old man. &quot;Spare a coin, traveller?&quot;, he begs.
-            (if: $coins is 0) [Unfortunately, I don&#39;t have any money, so I go on my [[way-&gt;Path to Dashur?]].]
-            (else:) [I wonder [[whether-&gt;Give Coin]] or [[not-&gt;Refuse to Give Coin]] I should give this man a coin.]</tw-passagedata>
-        <tw-passagedata pid="41" name="Bent Pyramid" tags="" position="3820,898" size="100,100">Double-click this passage to edit it.</tw-passagedata>
-        <tw-passagedata pid="42" name="Path to Dashur?" tags="" position="4219,678" size="100,100">Double-click this passage to edit it.</tw-passagedata>
-        <tw-passagedata pid="43" name="Give Coin" tags="" position="4052,507" size="100,100">(set: $beggarCoins += 1)
-            I give the man a coin. (set: $coins -= 1)
-            (if: $beggarCoins &lt; 4) [
-            (if: $coins is 0) [I&#39;ve given this man my last coin. I should be on my [[way-&gt;Path to Dashur?]].]
-            (else:)[&quot;Oh, thank you! Can I have [[another-&gt;Give Coin]]?&quot; Perhaps I should just go on my [[way-&gt;Path to Dashur?]].]]
-            (else:) [&quot;Thank you! Please have this spear. No use for it around here so nobody seems to want to buy it. Maybe you will have more luck finding a use for it.&quot; (set: $spear to 1) I take the spear from him. It is well-balanced
-            and sharp. With that, I [[take-&gt;Path to Dashur?]] my leave.]</tw-passagedata>
-        <tw-passagedata pid="44" name="Refuse to Give Coin" tags="" position="4063,788" size="100,100">I ignore the man and keep walking. A few seconds after, I hear a sound and look back to find that he vanished. Without giving it a second thought,
-            I [[continue-&gt;Path to Dashur?]] onwards.</tw-passagedata>
-        <tw-passagedata pid="45" name="Visit Luxor Temple" tags="" position="2091,296" size="100,100">Double-click this passage to edit it.</tw-passagedata>
-        <tw-passagedata pid="46" name="Modular Dungeon - Begin" tags="" position="300,531" size="100,100">(set: $prev_room = &quot;Entrance&quot;)(either: &quot;I make my way into &quot;, &quot;I enter &quot;, &quot;I find the entrance to &quot;)
-            //$dungeon_name//. (either: &quot;I venture into the next &quot;, &quot;I find myself heading towards the following &quot;, &quot;I make my way to the next &quot;)(set: $room_name = (either: &quot;room&quot;, &quot;passageway&quot;,
-            &quot;area&quot;, &quot;section of this building&quot;))(set: $random_var = (either: 0, 1, 2))(if: $random_var is 0) [[[$room_name-&gt;Door Room A]]](if: $random_var is 1) [[[$room_name-&gt;Door Room B]]](if: $random_var is 2)
-            [[[$room_name-&gt;Door Room C]]].</tw-passagedata>
-        <tw-passagedata pid="47" name="Example Enter Dungeon" tags="Example" position="145,529" size="100,100">[[Enter the Dungeon-&gt;Modular Dungeon - Begin]]
-            (set: $dungeon_name = &quot;The Dungeon of Fate&quot;)</tw-passagedata>
-        <tw-passagedata pid="48" name="Dead End" tags="" position="574,758" size="100,100">(either: &quot;I find myself in a room with no exit. I must return the way I came.&quot;, &quot;Dead end... Time to go back.&quot;, &quot;This room...
-            there&#39;s nothing for me here. I must head back.&quot;)
-            (if: $prev_room is &quot;Door Room A&quot;) [[[Leave-&gt;Door Room A]]](if: $prev_room is &quot;Door Room B&quot;) [[[Leave-&gt;Door Room B]]](if: $prev_room is &quot;Door Room C&quot;) [[[Leave-&gt;Door Room C]]]</tw-passagedata>
-        <tw-passagedata pid="49" name="Door Room A" tags="" position="497,526" size="100,100">(set: $cur_room = $prev_room)(set: $prev_room = &quot;Door Room A&quot;)
-            (set: $destination_r = (either: &quot;Dead End&quot;, &quot;B&quot;, &quot;C&quot;))
-            (set: $destination_l = (either: &quot;Dead End&quot;, &quot;B&quot;, &quot;C&quot;))
-            I end up in a room with a door on the right and the left. I go through:
-            (if: $destination_r is &quot;Dead End&quot;)[- [[The Right Door-&gt;Dead End]]]
-            (if: $destination_l is &quot;Dead End&quot;)[- [[The Left Door-&gt;Dead End]]]
-            (if: $cur_room is &quot;Door Room B&quot;)[- [[The way I came-&gt;Door Room B]]](if: $cur_room is &quot;Door Room C&quot;)[- [[The way I came-&gt;Door Room C]]](if: $cur_room is &quot;Entrance&quot;)[- [[The way I came-&gt;Modular
-            Dungeon - Exit]]]</tw-passagedata>
-        <tw-passagedata pid="50" name="Door Room B" tags="" position="618,526" size="100,100">(set: $cur_room = $prev_room)(set: $prev_room = &quot;Door Room B&quot;)
-            (set: $destination_r = (either: &quot;Dead End&quot;, &quot;Destination 2&quot;))
-            (set: $destination_l = (either: &quot;Dead End&quot;, &quot;Destination 2&quot;))
-            (set: $destination_c = (either: &quot;Dead End&quot;, &quot;Destination 2&quot;))
-            I end up in a room with a door in the center, right and the left. I go through:
-            - (if: $destination_c is &quot;Dead End&quot;) [[[The Center Door-&gt;Dead End]]]
-            - (if: $destination_r is &quot;Dead End&quot;) [[[The Right Door-&gt;Dead End]]]
-            - (if: $destination_l is &quot;Dead End&quot;) [[[The Left Door-&gt;Dead End]]]
-            (if: $cur_room is &quot;Door Room A&quot;)[- [[The way I came-&gt;Door Room A]]](if: $cur_room is &quot;Door Room C&quot;)[- [[The way I came-&gt;Door Room C]]](if: $cur_room is &quot;Entrance&quot;)[- [[The way I came-&gt;Modular
-            Dungeon - Exit]]]</tw-passagedata>
-        <tw-passagedata pid="51" name="Door Room C" tags="" position="743,526" size="100,100">(set: $cur_room = $prev_room)(set: $prev_room = &quot;Door Room C&quot;)
-            (set: $destination = (either: &quot;Dead End&quot;, &quot;A&quot;, &quot;B&quot;))
-            I end up in a room with a single door (either: &quot;in the center of the room&quot;, &quot;on the left&quot;, &quot;on the right&quot;). I go through:
-            (if: $destination is &quot;Dead End&quot;)[- [[The Right Door-&gt;Dead End]]](if: $destination is &quot;A&quot;)[- [[The Right Door-&gt;Door Room A]]](if: $destination is &quot;B&quot;)[- [[The Right Door-&gt;Door Room B]]]
-            (if: $cur_room is &quot;Door Room A&quot;)[- [[The way I came-&gt;Door Room A]]](if: $cur_room is &quot;Door Room B&quot;)[- [[The way I came-&gt;Door Room B]]](if: $cur_room is &quot;Entrance&quot;)[- [[The way I came-&gt;Modular
-            Dungeon - Exit]]]</tw-passagedata>
-        <tw-passagedata pid="52" name="$destination_r" tags="" position="172,378" size="100,100">Double-click this passage to edit it.</tw-passagedata>
-        <tw-passagedata pid="53" name="$destination_l" tags="" position="294,379" size="100,100">Double-click this passage to edit it.</tw-passagedata>
-        <tw-passagedata pid="54" name="Modular Dungeon - Exit" tags="" position="290,690" size="100,100">I manage to leave the //$dungeon_name//. Now to continue my journey.</tw-passagedata>
-=======
             (if: $pyramid_state is 1) [I return from the Bent Pyramid, resuming my path around the lake. It is scenic and peaceful, unlike the pyramid.] (else:) [The path around the lake is scenic and peaceful.] In the corner of my eye, I see an old
             man. &quot;Spare a coin, traveller?&quot;, he begs.
             (if: $coins is 0) [Unfortunately, I don&#39;t have any money, so I go on my [[way-&gt;Path to Dahshur]].]
@@ -414,7 +340,41 @@ console.log("var my_story = document.getElementsByTagName(\"tw-story\")[0];");
             &quot;You think I&#39;ll let you go? Prepare to die, Set.&quot; I charge at Set with all my might, unaware of anything happening around me. I am too angry, too resentful, and... too focused on revenge to feel pain. Set&#39;s golden spear
             penetrates my heart.
             &quot;Had you chosen the right city, you would&#39;ve met me in my palace. But you chose wrong, and I found you first. This is the [[end-&gt;Game Over]].&quot;</tw-passagedata>
->>>>>>> master
+        <tw-passagedata pid="72" name="Visit Luxor Temple" tags="" position="2091,296" size="100,100">Double-click this passage to edit it.</tw-passagedata>
+        <tw-passagedata pid="73" name="Modular Dungeon - Begin" tags="" position="300,531" size="100,100">(set: $prev_room = &quot;Entrance&quot;)(either: &quot;I make my way into &quot;, &quot;I enter &quot;, &quot;I find the entrance to &quot;)
+            //$dungeon_name//. (either: &quot;I venture into the next &quot;, &quot;I find myself heading towards the following &quot;, &quot;I make my way to the next &quot;)(set: $room_name = (either: &quot;room&quot;, &quot;passageway&quot;,
+            &quot;area&quot;, &quot;section of this building&quot;))(set: $random_var = (either: 0, 1, 2))(if: $random_var is 0) [[[$room_name-&gt;Door Room A]]](if: $random_var is 1) [[[$room_name-&gt;Door Room B]]](if: $random_var is 2)
+            [[[$room_name-&gt;Door Room C]]].</tw-passagedata>
+        <tw-passagedata pid="74" name="Example Enter Dungeon" tags="Example" position="145,529" size="100,100">[[Enter the Dungeon-&gt;Modular Dungeon - Begin]]
+            (set: $dungeon_name = &quot;The Dungeon of Fate&quot;)</tw-passagedata>
+        <tw-passagedata pid="75" name="Dead End" tags="" position="574,758" size="100,100">(either: &quot;I find myself in a room with no exit. I must return the way I came.&quot;, &quot;Dead end... Time to go back.&quot;, &quot;This room...
+            there&#39;s nothing for me here. I must head back.&quot;)
+            (if: $prev_room is &quot;Door Room A&quot;) [[[Leave-&gt;Door Room A]]](if: $prev_room is &quot;Door Room B&quot;) [[[Leave-&gt;Door Room B]]](if: $prev_room is &quot;Door Room C&quot;) [[[Leave-&gt;Door Room C]]]</tw-passagedata>
+        <tw-passagedata pid="76" name="Door Room A" tags="" position="497,526" size="100,100">(set: $cur_room = $prev_room)(set: $prev_room = &quot;Door Room A&quot;)
+            (set: $destination_r = (either: &quot;Dead End&quot;, &quot;B&quot;, &quot;C&quot;))
+            (set: $destination_l = (either: &quot;Dead End&quot;, &quot;B&quot;, &quot;C&quot;))
+            I end up in a room with a door on the right and the left. I go through:
+            (if: $destination_r is &quot;Dead End&quot;)[- [[The Right Door-&gt;Dead End]]]
+            (if: $destination_l is &quot;Dead End&quot;)[- [[The Left Door-&gt;Dead End]]]
+            (if: $cur_room is &quot;Door Room B&quot;)[- [[The way I came-&gt;Door Room B]]](if: $cur_room is &quot;Door Room C&quot;)[- [[The way I came-&gt;Door Room C]]](if: $cur_room is &quot;Entrance&quot;)[- [[The way I came-&gt;Modular
+            Dungeon - Exit]]]</tw-passagedata>
+        <tw-passagedata pid="77" name="Door Room B" tags="" position="618,526" size="100,100">(set: $cur_room = $prev_room)(set: $prev_room = &quot;Door Room B&quot;)
+            (set: $destination_r = (either: &quot;Dead End&quot;, &quot;Destination 2&quot;))
+            (set: $destination_l = (either: &quot;Dead End&quot;, &quot;Destination 2&quot;))
+            (set: $destination_c = (either: &quot;Dead End&quot;, &quot;Destination 2&quot;))
+            I end up in a room with a door in the center, right and the left. I go through:
+            - (if: $destination_c is &quot;Dead End&quot;) [[[The Center Door-&gt;Dead End]]]
+            - (if: $destination_r is &quot;Dead End&quot;) [[[The Right Door-&gt;Dead End]]]
+            - (if: $destination_l is &quot;Dead End&quot;) [[[The Left Door-&gt;Dead End]]]
+            (if: $cur_room is &quot;Door Room A&quot;)[- [[The way I came-&gt;Door Room A]]](if: $cur_room is &quot;Door Room C&quot;)[- [[The way I came-&gt;Door Room C]]](if: $cur_room is &quot;Entrance&quot;)[- [[The way I came-&gt;Modular
+            Dungeon - Exit]]]</tw-passagedata>
+        <tw-passagedata pid="78" name="Door Room C" tags="" position="743,526" size="100,100">(set: $cur_room = $prev_room)(set: $prev_room = &quot;Door Room C&quot;)
+            (set: $destination = (either: &quot;Dead End&quot;, &quot;A&quot;, &quot;B&quot;))
+            I end up in a room with a single door (either: &quot;in the center of the room&quot;, &quot;on the left&quot;, &quot;on the right&quot;). I go through:
+            (if: $destination is &quot;Dead End&quot;)[- [[The Right Door-&gt;Dead End]]](if: $destination is &quot;A&quot;)[- [[The Right Door-&gt;Door Room A]]](if: $destination is &quot;B&quot;)[- [[The Right Door-&gt;Door Room B]]]
+            (if: $cur_room is &quot;Door Room A&quot;)[- [[The way I came-&gt;Door Room A]]](if: $cur_room is &quot;Door Room B&quot;)[- [[The way I came-&gt;Door Room B]]](if: $cur_room is &quot;Entrance&quot;)[- [[The way I came-&gt;Modular
+            Dungeon - Exit]]]</tw-passagedata>
+        <tw-passagedata pid="79" name="Modular Dungeon - Exit" tags="" position="290,690" size="100,100">I manage to leave the //$dungeon_name//. Now to continue my journey.</tw-passagedata>
     </tw-storydata>
 
     <script title="Twine engine code" data-main="harlowe">
